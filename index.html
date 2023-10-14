@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ Test</title>
+    <link rel="stylesheet" href="index.css">
+    <script type = "text/javascript" src="index.js"></script>  
+</head>
+<body>
+    <div class="flexbox">
+    <main>
+        <h1 style="grid-area: 1 / 1 / 2 / 5; margin: 10px 10px 0 10px;">Test inteligence</h1>
+        <p id="otazka" class="hide" style="grid-area: 2 / 1 / 3 / 5;">otázka 1.: Jsi debil?</p>
+        <button id="ano" class="hide" onclick="odpoved(this.id)" style="grid-area: 3 / 2 / 4 / 3;">Ano</button>
+        <button id="ne" class="hide" onclick="odpoved(this.id)" onmouseover="move()" style="grid-area: 3 / 3 / 4 / 4;">Ne</button>
+        <button id="submit" class="hide" onclick="odevzdat()" style="grid-area: 4 / 2 / 5 / 4; margin-bottom: 5%;">Odevzdat test</button>
+        <button id="spustit" onclick="spustit()" style="grid-area: 4 / 2 / 5 / 4; margin-bottom: 5%; font-size: 15px;">Spustit test</button>
+        <p class="show" id="píčus" style="grid-area: 2 / 1 / 3 / 5; font-size: 20px; font-weight: bolder;"></p>
+        <p id="answer" class="show" style="grid-area: 3 / 2 / 4 / 4;"></p>
+        <button class="show" onclick="location.reload()" style="grid-area: 4 / 2 / 5 / 4; margin-bottom: 5%;">spustit znovu</button>
+        
+    </main>
+    </div>
+</body>
+</html>
