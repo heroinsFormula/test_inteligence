@@ -49,8 +49,6 @@ function move() {
    let randX = Math.ceil(Math.random() * 750) * (Math.round(Math.random()) ? 1 : -1);
    document.getElementById("ne").style.transform = `translate(${randX}%, ${randY}%)`;
    answer = 0;
-   document.getElementById("ano").style.backgroundColor = "white";
-   document.getElementById("ne").style.backgroundColor = "white";
    }
 }
 
